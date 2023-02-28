@@ -14,4 +14,4 @@ GDELT 2.0 is a platform that monitors news reports breaking anywhere in the worl
 
 ### Hackathon Gdelt Article Text Data.py 
 
-This python notebook pulls data Events Data from teh 
+This python notebook pulls data Gdelt 2.0 events database and scrapes the text from the news events in preparation for Open AI summarization and classification.
