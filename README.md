@@ -19,14 +19,22 @@ This python notebook pulls data Gdelt 2.0 events database and scrapes the text f
 ### Getting results from Azure OpenAI and OpenAI
 
 Suggested Prerequisites:
-- Use [WSL][https://learn.microsoft.com/en-us/windows/wsl/install]
-- Use [miniconda][https://docs.conda.io/en/latest/miniconda.html]
+- Use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+- Use [miniconda](https://docs.conda.io/en/latest/miniconda.html)
 - Create a new conda python 3.8 environment. Don't use the base environment.
 
 Prerequisites
 - Python 3.8+
 - Install the openai and langchain python libraries
+- Obtain an [OpenAI]{https://openai.com/product) API key
+- Or obtain an [Azure OpenAI]{https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview} API key
 
-
-
-
+Steps
+1. Setup environment variables for Python to use
+  ``export OPENAI_API_KEY=``
+Or if using Azure OpenAI
+  ```export OPENAI_API_TYPE=azure
+  export OPENAI_API_VERSION=2022-12-01
+  export OPENAI_API_BASE=https://<your name>.openai.azure.com/
+  export OPENAI_API_KEY=```
+2. Run [tsi_hackathon.py}(https://github.com/tferguson14/TSI-Open-AI-Hackathon---Crisis-Avengers/blob/main/llm/code/tsi_hackathon.py)
