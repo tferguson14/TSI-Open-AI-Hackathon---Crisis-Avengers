@@ -15,3 +15,18 @@ GDELT 2.0 is a platform that monitors news reports breaking anywhere in the worl
 ### Hackathon Gdelt Article Text Data.py 
 
 This python notebook pulls data Gdelt 2.0 events database and scrapes the text from the news events in preparation for Open AI summarization and classification.
+
+### Getting results from Azure OpenAI and OpenAI
+
+Suggested Prerequisites:
+- Use [WSL][https://learn.microsoft.com/en-us/windows/wsl/install]
+- Use [miniconda][https://docs.conda.io/en/latest/miniconda.html]
+- Create a new conda python 3.8 environment. Don't use the base environment.
+
+Prerequisites
+- Python 3.8+
+- Install the openai and langchain python libraries
+
+
+
+
