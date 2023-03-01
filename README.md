@@ -26,15 +26,22 @@ Suggested Prerequisites:
 Prerequisites
 - Python 3.8+
 - Install the openai and langchain python libraries
-- Obtain an [OpenAI]{https://openai.com/product) API key
-- Or obtain an [Azure OpenAI]{https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview} API key
+- Obtain an [OpenAI](https://openai.com/product) API key
+- Or obtain an [Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview) API key
 
 Steps
 1. Setup environment variables for Python to use
-  ``export OPENAI_API_KEY=``
-Or if using Azure OpenAI
+  ```export OPENAI_API_KEY```.
+Or if using Azure OpenAI you'll need three additional environment variables. Four total counting the API key.
   ```export OPENAI_API_TYPE=azure
   export OPENAI_API_VERSION=2022-12-01
   export OPENAI_API_BASE=https://<your name>.openai.azure.com/
-  export OPENAI_API_KEY=```
-2. Run [tsi_hackathon.py}(https://github.com/tferguson14/TSI-Open-AI-Hackathon---Crisis-Avengers/blob/main/llm/code/tsi_hackathon.py)
+  export OPENAI_API_KEY=
+  ```
+  
+2. Place the file to be processed in the llm/files folder.
+3. Open [tsi_hackathon.py](https://github.com/tferguson14/TSI-Open-AI-Hackathon---Crisis-Avengers/blob/main/llm/code/tsi_hackathon.py) and edit the data_file variable to match the name of the file to be processed.
+4. Execute tsi_hackathon.py and watch the output to see reponses from the OpenAI/Azure API.
+
+
+
