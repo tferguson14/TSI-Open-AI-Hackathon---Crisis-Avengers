@@ -1,5 +1,4 @@
 # project/code/tsi_hackathon.py
-# export OPENAI_API_KEY=sk
 
 import json
 import time
@@ -12,19 +11,6 @@ from azure_openai_apicall import AzureOpenAIApiCall
 data_file = 'files/eventsdata_sample_text_5k.json'
 ids_to_skip_file = 'files/ids_to_skip.txt'
 results_file = 'files/results.json'
-
-# define the dictionary of keywords
-keywords = {
-    "natural_disaster": ["earthquake", "tsunami", "hurricane", "flood", "drought"],
-    "conflict_displacement": ["armed conflict", "civil war", "displacement", "refugee", "migrant"],
-    "epidemic_and_pandemic": ["outbreak", "disease", "ebola", "zika", "cholera", "measles", "malaria", "flu", "pandemic", "epidemic"],
-    "food_insecurity_malnutrition": ["hunger", "starvation", "malnutrition", "food insecurity", "food security", "food crisis", "food shortage", "food aid", "food assistance", "food distribution"],
-    "refugee_asylum_seeker": ["forced", "flee", "persecution", "conflict", "violence", "displacement", "refugee", "migrant", "asylum seeker", "asylum", "migration", "migrants", "refugees", "displaced", "displaced persons"],
-    "gender-based_violence": ["sexual assault", "domestic violence"],
-    "water_sanitation": ["sanitation", "water", "water shortage", "water crisis", "water contamination", "water pollution", "water access", "water supply", "water treatment", "water quality", "water scarcity"],
-    "human_rights_abuses_violation": ["torture", "forced", "exploitation", "abuse", "violence", "persecution", "conflict", "displacement"],
-    "environmental_degradation_climate_change": ["climate", "drought", "flood","crisis", "disaster", "emergency", "emergency response"]
-}
 
 # create a data processor instance and prepare the items
 data_processor = DataProcessor(data_file, keywords, ids_to_skip_file)
